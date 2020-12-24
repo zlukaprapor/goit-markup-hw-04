@@ -40,7 +40,7 @@ a {
 
 /* Шапка */
 .header {
-  border-bottom: 1px solid #ececec;
+  /* border-bottom: 1px solid #ececec; */
 }
 .header > .container {
   display: flex;
@@ -90,18 +90,32 @@ a {
   color: var(--accent-color);
 }
 .mail-link {
-  margin-left: auto;
+  /* margin-left: auto; */
   margin-right: 50px;
 }
-.mail-svg::before {
+.mail-svg {
+  display: block;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  margin-left: auto;
+}
+.tel-svg {
+  display: block;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+/* .mail-svg::before {
   content: "";
   display: inline-block;
   height: 12px;
   width: 16px;
   margin-right: 10px;
-  background-image: url(../images/mail.svg);
+  margin-bottom: -1px;
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(../images/mail.svg);
 }
 .tel-svg::before {
   content: "";
@@ -109,10 +123,12 @@ a {
   height: 16px;
   width: 10px;
   margin-right: 10px;
-  background-image: url(../images/smartphone.svg);
+  margin-bottom: -2px;
   background-repeat: no-repeat;
   background-position: center;
-}
+  background-image: url(../images/smartphone.svg);
+} */
+
 /* Герой */
 
 .hero {
@@ -214,29 +230,16 @@ a {
   letter-spacing: 0.03em;
   color: var(--primeri-text-color);
 }
-.feature-li::before {
-  content: "";
+.feature-svg {
   display: block;
+  width: 270px;
   height: 120px;
-  /* width: 270px; */
+  padding: 25px 100px;
   margin-bottom: 30px;
-  background: var(--batton-background-color);
   border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: var(--batton-background-color);
 }
-.antena::before {
-  background-image: url("../images/antenna\ 1.svg");
-}
-.clock::before {
-  background-image: url("../images/clock\ 1.svg");
-}
-.diagram::before {
-  background-image: url("../images/diagram\ 1.svg");
-}
-.astronaut::before {
-  background-image: url("../images/astronaut\ 1.svg");
-}
+
 /* Чем мы занимаемся */
 
 .images {
@@ -253,6 +256,7 @@ a {
 .image-ul > .images-li:nth-child(3n) {
   margin-right: 0;
 }
+.client-title,
 .images-title,
 .team-title {
   margin-bottom: 50px;
@@ -273,7 +277,7 @@ a {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-size: 1600px 600px;
+  background-size: 1600px 648px;
   background-repeat: no-repeat;
   background-position: center;
   background-image: linear-gradient(
@@ -445,4 +449,15 @@ a {
 .product-p {
   width: 322px;
   height: 32px;
+}
+
+/* Постоянные клиенты  */
+
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.client-title {
+  height: 182px;
+  margin-bottom: 0px;
 }
