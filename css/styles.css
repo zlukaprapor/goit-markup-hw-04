@@ -5,6 +5,7 @@
   --white-color: #ffffff;
   --dark-color: #000000;
   --batton-background-color: #f5f4fa;
+  --social-link-button: #afb1b8;
 }
 body {
   font-family: roboto;
@@ -279,7 +280,7 @@ a {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-size: 1600px 648px;
+  background-size: 1600px 708px;
   background-repeat: no-repeat;
   background-position: center;
   background-image: linear-gradient(
@@ -300,7 +301,7 @@ a {
   margin-right: 0;
 }
 .time-list {
-  height: 368px;
+  height: 428px;
   text-align: center;
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
@@ -327,7 +328,33 @@ a {
   letter-spacing: 0.03em;
   color: var(--primeri-text-color);
 }
+.team-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 16px;
+}
 
+.team-button {
+  display: flex;
+  padding: 0;
+  border: none;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  fill: var(--social-link-button);
+  background-color: transparent;
+}
+.team-button:not(:last-child) {
+  margin-right: 10px;
+}
+.team-button:hover,
+.team-button:focus {
+  fill: var(--white-color);
+  background-color: var(--accent-color);
+}
 /* Подвал */
 
 .footer {
@@ -406,8 +433,6 @@ a {
 .progect {
   display: flex;
   flex-wrap: wrap;
-  /* margin-right: -30px;
-  margin-bottom: -30px; */
 }
 .progect-li {
   margin-right: 30px;
